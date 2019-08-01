@@ -61,9 +61,8 @@ module.exports = {
     extensions: ['.js', '.jsx'],
     alias: {
       // JS alias
-      '@Common': path.resolve(__dirname, './src/common/'),
-      '@Config': path.resolve(__dirname, './src/config/'),
       '@Grid': path.resolve(__dirname, './src/grid/'),
+      '@Docs': path.resolve(__dirname, './docs/'),
       // Style alias
       theme: path.resolve(__dirname, './src/styles/themes'),
       application: path.resolve(__dirname, './src/application'),

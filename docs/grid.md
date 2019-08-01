@@ -1,8 +1,8 @@
 Basic usage
 
 ```js
-import { Container, Row, Col } from '../../grid';
-import Box from '../docs/components/box';
+import { Container, Row, Col } from '../src/grid';
+import Box from './components/box';
 
 <Container>
   <Row as="section">
@@ -32,8 +32,8 @@ Custom configuration
 
 ```js
 import { ThemeProvider } from 'styled-components';
-import { Container, Row, Col } from '../../grid';
-import Box from '../docs/components/box';
+import { Container, Row, Col } from '../src/grid';
+import Box from './components/box';
 
 const config = {
   simpleGrid: {

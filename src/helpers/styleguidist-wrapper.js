@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { customConfig } from '@Grid/docs/config';
+import { customConfig } from '@Docs/config';
 
 const config = { simpleGrid: customConfig || {} };
 

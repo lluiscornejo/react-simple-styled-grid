@@ -11,8 +11,7 @@ module.exports = {
   sections: [
     {
       name: 'Grid',
-      content: 'src/grid/docs/grid.md',
-      ignore: 'src/grid/**/index.js',
+      content: 'docs/grid.md',
       skipComponentsWithoutExample: true,
     },
   ],

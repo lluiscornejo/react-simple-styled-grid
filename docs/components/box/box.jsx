@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyledBox } from './styled-box';
-import Text from './../text';
+import Text from '../text';
 
 const Box = ({ content: { small, medium, large } }) => (
   <StyledBox>
