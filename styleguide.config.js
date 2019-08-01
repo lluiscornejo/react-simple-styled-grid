@@ -10,7 +10,7 @@ module.exports = {
   },
   sections: [
     {
-      name: 'Grid',
+      name: 'React simple styled grid',
       content: 'src/docs/grid.md',
       skipComponentsWithoutExample: true,
     },

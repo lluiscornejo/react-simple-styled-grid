@@ -14,10 +14,9 @@ npm i --save react-simple-styled-grid
 npm i --save styled-components
 ```
 
-## Documentation
+## Demo
 
-
-[Go to homepage](https://lluiscornejo.github.io/react-simple-styled-grid/index.html)
+<a href="https://lluiscornejo.github.io/react-simple-styled-grid/index.html" target="_blank">https://lluiscornejo.github.io/react-simple-styled-grid/index.html</a>
 
 ## Basic usage
 
