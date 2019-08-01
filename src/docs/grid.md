@@ -1,7 +1,7 @@
 Basic usage
 
 ```js
-import { Container, Row, Col } from '../src/grid';
+import { Container, Row, Col } from '../grid';
 import Box from './components/box';
 
 <Container>
@@ -32,7 +32,7 @@ Custom configuration
 
 ```js
 import { ThemeProvider } from 'styled-components';
-import { Container, Row, Col } from '../src/grid';
+import { Container, Row, Col } from '../grid';
 import Box from './components/box';
 
 const config = {

@@ -3,6 +3,5 @@
 System.config({
   paths: {
     '@Grid/*': './src/grid/*',
-    '@Docs/*': './docs/*',
   },
 });

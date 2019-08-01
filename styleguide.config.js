@@ -11,8 +11,9 @@ module.exports = {
   sections: [
     {
       name: 'Grid',
-      content: 'docs/grid.md',
+      content: 'src/docs/grid.md',
       skipComponentsWithoutExample: true,
     },
   ],
+  styleguideDir: 'docs/',
 };

@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const packageConfig = require('./package.json');
 
 const paths = {
@@ -62,7 +62,6 @@ module.exports = {
     alias: {
       // JS alias
       '@Grid': path.resolve(__dirname, './src/grid/'),
-      '@Docs': path.resolve(__dirname, './docs/'),
       // Style alias
       theme: path.resolve(__dirname, './src/styles/themes'),
       application: path.resolve(__dirname, './src/application'),
@@ -70,11 +69,18 @@ module.exports = {
     },
   },
   optimization: {
+    minimize: true,
     minimizer: [
-      new UglifyJsPlugin({
+      new TerserPlugin({
+        sourceMap: development,
         cache: true,
         parallel: true,
-        sourceMap: true,
+        terserOptions: {
+          compress: true,
+          ecma: 6,
+          ie8: false,
+          mangle: true,
+        },
       }),
     ],
   },
