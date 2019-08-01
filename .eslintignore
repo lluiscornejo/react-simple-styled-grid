@@ -1,0 +1,6 @@
+src/client/common/files/*
+build/*
+dist/*
+node_modules/*
+test-coverage/*
+styleguide/*

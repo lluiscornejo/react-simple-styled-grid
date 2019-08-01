@@ -1,0 +1,11 @@
+/.idea
+/node_modules/
+/test-coverage
+
+.DS_Store
+.vscode
+/coverage/
+/build/
+/public/
+/styleguide/
+/dist/
