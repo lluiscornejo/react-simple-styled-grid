@@ -16,6 +16,9 @@ npm i --save styled-components
 
 ## Documentation
 
+
+[Go to homepage](https://lluiscornejo.github.io/react-simple-styled-grid/index.html)
+
 ## Basic usage
 
 ```js
