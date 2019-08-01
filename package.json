@@ -28,7 +28,7 @@
   },
   "author": "Luis Cornejo",
   "license": "ISC",
-  "homepage": "https://github.com/lluiscornejo/react-simple-styled-grid",
+  "homepage": "https://lluiscornejo.github.io/react-simple-styled-grid/index.html",
   "dependencies": {
     "browserslist": "^4.5.2",
     "caniuse-lite": "^1.0.30000951",
