@@ -7,6 +7,12 @@
     ["babel-plugin-styled-components"],
     ["react-intl", {
       "messagesDir": "./src/common/i18n/extracted-messages"
+    }],
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "@Grid": "./src/grid",
+      }
     }]
   ]
 }

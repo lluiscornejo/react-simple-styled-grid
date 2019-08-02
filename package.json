@@ -1,17 +1,21 @@
 {
   "name": "react-simple-styled-grid",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "React simple styled components grid",
-  "main": "index.js",
+  "main": "./dist/bundle.js",
   "files": [
-    "dist",
-    "lib"
+    "dist"
+  ],
+  "keywords": [
+    "styled-components",
+    "grid"
   ],
   "scripts": {
     "clean": "rimraf build public dist",
     "start": "cross-env NODE_ENV=development npm run server",
     "build-dev": "npm run clean && cross-env NODE_ENV=development webpack",
     "build-pro": "npm run clean && cross-env NODE_ENV=production webpack",
+    "build": "npm run build",
     "server": "webpack-dev-server",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
@@ -65,6 +69,7 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.2",
+    "babel-plugin-module-resolver": "^3.2.0",
     "babel-plugin-react-intl": "^3.0.1",
     "babel-plugin-styled-components": "^1.10.0",
     "chai": "^4.1.2",

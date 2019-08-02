@@ -9,6 +9,7 @@ const paths = {
   SRC: path.resolve(__dirname, 'src'),
 };
 
+const testMode = process.env.TEST_MODE;
 const development = process.env.NODE_ENV === 'development';
 const publicPath = '/';
 
@@ -28,6 +29,7 @@ module.exports = {
     filename: 'bundle.js',
     path: paths.DIST,
     publicPath,
+    libraryTarget: 'commonjs2',
   },
   module: {
     rules: [
@@ -97,3 +99,21 @@ module.exports = {
   mode: process.env.NODE_ENV,
   devtool: development && 'source-map',
 };
+
+if (!testMode) {
+  // Don't bundle react or react-dom
+  module.exports.externals = {
+    react: {
+      commonjs: 'react',
+      commonjs2: 'react',
+      amd: 'react',
+      root: 'react',
+    },
+    'react-dom': {
+      commonjs: 'react-dom',
+      commonjs2: 'react-dom',
+      amd: 'react-dom',
+      root: 'react-dom',
+    },
+  };
+}
