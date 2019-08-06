@@ -1,10 +1,11 @@
 {
   "name": "react-simple-styled-grid",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "React simple styled components grid",
-  "main": "./dist/bundle.js",
+  "main": "./lib",
   "files": [
-    "dist"
+    "dist",
+    "lib"
   ],
   "keywords": [
     "styled-components",
@@ -13,6 +14,7 @@
   "scripts": {
     "clean": "rimraf build public dist",
     "start": "cross-env NODE_ENV=development npm run server",
+    "prepublish": "babel ./src --out-dir ./lib && npm run build-pro",
     "build-dev": "npm run clean && cross-env NODE_ENV=development webpack",
     "build-pro": "npm run clean && cross-env NODE_ENV=production webpack",
     "build": "npm run build",
@@ -42,7 +44,6 @@
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-helmet": "^5.2.0",
     "react-intl": "^2.8.0",
     "react-intl-translations-manager": "^5.0.1",
     "react-modal": "^3.8.1",
@@ -50,21 +51,18 @@
     "react-responsive": "^6.1.1",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-slick": "^0.23.1",
     "react-swipeable": "^5.2.0",
-    "react-tooltip": "^3.10.0",
     "recompose": "^0.30.0",
-    "screenfull": "^4.2.0",
     "styled-components": "^4.2.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.3",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-proposal-optional-chaining": "^7.2.0",
     "@babel/plugin-transform-runtime": "^7.3.4",
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
-    "babel-cli": "^6.26.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
