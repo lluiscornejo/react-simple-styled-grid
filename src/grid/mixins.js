@@ -11,7 +11,7 @@ export const gutter = config => `
   box-sizing: border-box;
   padding-left: ${config.gutter}px;
   padding-right: ${config.gutter}px;
-  @media ${mediaQuery(config.screen).small} {
+  @media ${mediaQuery(config.screen).onlySmall} {
     padding-left: ${config.gutterSmall}px;
     padding-right: ${config.gutterSmall}px;
   }
@@ -20,7 +20,7 @@ export const gutter = config => `
 export const negativeGutter = config => `
   margin-right: -${config.gutter}px;
   margin-left: -${config.gutter}px;
-  @media ${mediaQuery(config.screen).small} {
+  @media ${mediaQuery(config.screen).onlySmall} {
     margin-left: -${config.gutterSmall}px;
     margin-right: -${config.gutterSmall}px;
   }

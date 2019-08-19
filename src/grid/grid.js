@@ -14,12 +14,12 @@ export const Container = styled.div`
   ${({ theme }) => gutter({ ...defaultConfig, ...theme.simpleGrid })}
 `;
 
-export const Row = styled.div(({ theme, center }) => ({
-  display: 'flex',
-  'flex-wrap': 'wrap',
-  ...negativeGutter({ ...defaultConfig, ...theme.simpleGrid }),
-  'align-items': center ? 'center' : 'normal',
-}));
+export const Row = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: ${({ center }) => center ? 'center' : 'normal'};
+  ${({ theme }) => negativeGutter({ ...defaultConfig, ...theme.simpleGrid })}
+`;
 
 export const Col = styled.div`
   flex: 0 1 100%;

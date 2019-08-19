@@ -1,6 +1,6 @@
 {
   "name": "react-simple-styled-grid",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "React simple styled components grid",
   "main": "./lib",
   "files": [
